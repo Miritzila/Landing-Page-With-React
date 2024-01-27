@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Card from "./Card";
 import Jumbotron from "./Jumbotron";
+import Footer from "./Footer";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -17,8 +18,11 @@ const Home = () => {
                         {/* Columna vacía si es necesario */}
                     </div>
                     <div className="col-md-10">
-                        <div className="container"><Jumbotron /></div>
                         <div className="row justify-content-around">
+                        <div className="container"><Jumbotron /></div>
+                            <div className="col-md-3">
+                                <div className="container"><Card /></div>
+                            </div>
                             <div className="col-md-3">
                                 <div className="container"><Card /></div>
                             </div>
@@ -35,6 +39,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <br></br>
+            <div><Footer /></div>
         </div>
     );
 };
